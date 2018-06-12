@@ -21,21 +21,28 @@
 	  "responseTemplate": {
 	        "LastUpdateDate": "LastUpdateDate",
 	        "Name": "StoryName"
-	  }
+	  },
+  "relationMetadata": {"labels" : ["Rally_Iteration"],"dataUpdateSupported" : true,"uniqueKey":["IterationID", "ProjectID"]},
+  "runSchedule": 30,
+  "storyMetadata": {"labels":["Rally_Story"],"dataUpdateSupported" : true,"uniqueKey":["ProjectID", "ID"]},
+  "specificProjectsList": [
+                           "Project_url_1", 
+                           "Project_url_2"
+                          ]
   },
   "toolCategory" : "ALM",
   "proxy": "proxy.companyname.com:8080/",
-  "accesstoken":"_2skCGY7Qm27OhmYNrLQu2jhXcW",
+  "accessToken":"",
   "runSchedule": 30,
-  "userid": "userid",
-  "passwd": "passwd",
-  "baseUrl": "https://rally1.rallydev.com/slm/webservice/v2.0/",
+  "userid": "",
+  "passwd": "",
+  "baseUrl": "",
   "startFrom": "2016-10-10 00:01",
   "toolsTimeZone" : "Asia/Kolkata",
   "insightsTimeZone" : "Asia/Kolkata",
   "useResponseTemplate" : true,
   "timeStampField":"LastUpdated",
-  "timeStampFormat":"%Y-%m-%dT%H:%M:%S",
+  "timeStampFormat":"%Y-%m-%dT%H:%M:%SZ",
   "isDebugAllowed" : false,
   "loggingSetting" : {
 		"logLevel" : "WARN"
