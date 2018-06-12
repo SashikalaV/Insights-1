@@ -6,11 +6,11 @@
     "exchange": "iSight"
   },
   "subscribe": {
-    "config": "ALM.RALLYCOPY.config"
+    "config": "ALM.RALLY.config"
   },
   "publish": {
-    "data": "ALM.RALLYCOPY.DATA",
-    "health": "ALM.RALLYCOPY.HEALTH"
+    "data": "ALM.RALLY.DATA",
+    "health": "ALM.RALLY.HEALTH"
   },
   "communication": {
     "type": "REST"
@@ -19,10 +19,10 @@
         "LastUpdateDate": "LastUpdateDate",
         "UserStory": "StoryName",
         "UserStoryCreationDate":"StoryVreationDate"
-  },
+  }, 
+  "relationMetadata": {"labels" : ["Rally_ITERATION"],"dataUpdateSupported" : true,"uniqueKey":["IterationID", "ProjectID"]},
   "runSchedule": 30,
-  "storyMetadata": {"labels" : ["Rally_STORY"]},
-  "defectMetadata": {"labels" : ["Rally_defect"]},
+  "storyMetadata": {"labels":["Rally_STORY"],"dataUpdateSupported" : true,"uniqueKey":["ProjectID", "ID"]},
   "userid": "",
   "passwd": "",
   "baseUrl": "",
@@ -30,8 +30,8 @@
   "toolsTimeZone" : "Asia/Kolkata",
   "insightsTimeZone" : "Asia/Kolkata",
   "useResponseTemplate" : true,
-  "timeStampField":"LastUpdated",
-  "timeStampFormat":"%Y-%m-%dT%H:%M:%S",
+  "timeStampField":"LastUpdateDate",
+  "timeStampFormat":"%Y-%m-%dT%H:%M:%SZ",
   "isDebugAllowed" : false,
   "loggingSetting" : {
 		"logLevel" : "WARN"
